@@ -1,0 +1,11 @@
+var eles=document.querySelectorAll(".test");
+eles.forEach(function(v,i){
+  v.setAttribute("id","test-" + (i + 1))
+})//给div赋予值
+var divs=document.getElementsByTagName("div");
+for (var i=0; i<=divs.length; i++){
+  divs[i].onclick = function(){
+    var abc=$(this).text();
+    alert(abc);
+  }
+}
